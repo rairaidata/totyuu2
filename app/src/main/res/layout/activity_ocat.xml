@@ -43,7 +43,16 @@
             android:layout_height="wrap_content"
             android:text="OCATは難波に位置する、言わば「ダンサーの聖地」である！イベントが開催している日以外は、２４時間練習場所として使えるのだ！"
             android:id="@+id/textView2"
-            android:layout_weight="2" />
+            android:layout_weight="1.58" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="練習なう！"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal"
+            android:onClick="rensyu"
+            android:background="#00eaff" />
 
     </LinearLayout>
 </RelativeLayout>

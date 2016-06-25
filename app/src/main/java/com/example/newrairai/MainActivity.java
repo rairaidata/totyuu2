@@ -30,9 +30,9 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<User> users = new ArrayList<>();
 
         int[] icons = {
-                R.mipmap.ic_launcher,
-                R.mipmap.ic_launcher,
-                R.mipmap.ic_launcher,
+                R.drawable.asa,
+                R.drawable.tatata,
+                R.drawable.iii,
                 R.mipmap.ic_launcher,
                 R.mipmap.ic_launcher,
                 R.mipmap.ic_launcher,
@@ -83,13 +83,19 @@ public class MainActivity extends AppCompatActivity {
         myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(
-                    AdapterView<?> adapterView,
+                    AdapterView<?> parent,
                     View view, // タップされたView
-                    int i, // 何番目か
-                    long l // View id
-            ) {
+                    int position, // 何番目か
+                    long id // View id
+            ) {// ListView
+                ListView listView = (ListView)parent;
+                // 選択された項目
+                String selectedItemStr = (String)listView.getItemAtPosition(position);
+                // 第2引数
+                Intent intent = new Intent(getApplicationContext(), ocatActivity.class);
+                startActivity(intent);
             }
-            
+
         });
     }
 

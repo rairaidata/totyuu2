@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ocatActivity"
+            android:name=".OcatActivity"
             android:label="@string/app_name"></activity>
         <activity android:name=".takatuki"></activity>
     </application>

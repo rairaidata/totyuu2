@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.newrairai">
+    package="com.hirai.fdp">
 
     <application
         android:allowBackup="true"
@@ -16,9 +16,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".OcatActivity"
-            android:label="@string/app_name"></activity>
-        <activity android:name=".takatuki"></activity>
+            android:name=".DetailsActivity"
+            android:label="@string/app_name" />
+        <activity android:name=".SearchActivity"></activity>
     </application>
 
 </manifest>

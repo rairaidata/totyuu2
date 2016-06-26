@@ -8,8 +8,10 @@
     <ImageView
         android:id="@+id/icon"
         android:layout_marginRight="16dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ibaraki" />
 
     <LinearLayout
         android:layout_weight="1"
